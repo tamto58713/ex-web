@@ -1,0 +1,27 @@
+extends ../common/header
+block header
+      a(href="/admin")
+         button(class=" btn btn-primary ml-1") Admin HomePage  
+      br
+      a(href="/admin/products")
+         button(class="btn btn-primary mt-2" style="margin-left: 6.1em") Back
+      .bg-light.w-50.m-auto.h-60(style="text-align: center")
+         h3(style="padding-top: 10px") Edit Product
+         .form(style="width: 100%; padding-top: 40px")
+            .form-group.form-inline.row
+               label.col-md-5(style="justify-content: left; padding-left: 40px") 
+                  strong Product code
+               input.form-control.col-md-6(name="code" type="text")
+            .form-group.form-inline.row
+               label.col-md-5(style="justify-content: left; padding-left: 40px") 
+                  strong Product Name
+               input.form-control.col-md-6(name="name" type="text")
+            .form-group.form-inline.row
+               label.col-md-5(style="justify-content: left; padding-left: 40px")
+                  strong Category
+               input.form-control.col-md-6(name="code" type="text")
+            .form-group.form-inline.row
+               label.col-md-5(style="justify-content: left; padding-left: 40px")  
+                  strong Product Amount
+               input.form-control.col-md-6(name="amount" type="text")
+            button.btn.btn-success.mt-5 Update

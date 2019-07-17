@@ -1,0 +1,17 @@
+extends ../common/header
+block header
+      a(href="/admin")
+         button(class=" btn btn-primary ml-1") Admin HomePage
+      .container.mt-5
+         a(href="./admin/addCategory")
+            button(class="btn btn-danger") Add Category
+         .row(style="text-align: center")
+            each product in [1,2,3,4]
+               .card.col-lg-3.col-md-4.col-sm-6(style="border: none !important; padding: 0; margin-top: 35px")
+                  img.card-img-top(src='', alt='...' style="width: 250px; height: 250px; margin: 0 auto")
+                  .card-body(style="padding: 0") 
+                     .btn-group(style="margin-top: 10px")
+                        a(href="/admin/editCategory")
+                           button(class="btn btn-info mr-1" style="width: 110px") Edit 
+                        button(class="btn btn-info" style="width: 110px" onclick='confirm("Are you sure delete category?")') Delete
+

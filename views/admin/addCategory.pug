@@ -1,0 +1,15 @@
+extends ../common/header
+block header
+      a(href="/admin")
+         button(class=" btn btn-primary ml-1") Admin HomePage
+      br
+      a(href="/admin")
+         button(class="btn btn-primary mt-2" style="margin-left: 6.1em") Back
+      .bg-light.w-50.m-auto.h-50(style="text-align: center")
+                h3(style="padding-top: 10px") Add Category
+                .form(style="width: 100%; padding-top: 40px")
+                        .form-group.form-inline.row
+                                label.col-md-4 
+                                        strong Category
+                                input.form-control.col-md-6.offset-md-1(name="name" type="text")
+                        button.btn.btn-success.mt-5 Add
