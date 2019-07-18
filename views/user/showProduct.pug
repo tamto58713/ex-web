@@ -1,0 +1,26 @@
+extends ../common/header
+block header
+        a(href="/user")
+            button.ml-5(class="btn btn-primary") Home
+        .bg-light.w-50.m-auto.h-50(style="text-align: center")
+            .card.mb-3(style='max-width: 540px;')
+                .row
+                    .col-md-7.mt-3
+                        img.card-img-top(src='/images/iphone-6.jpg', alt='...' style="width: 250px; height: 350px; margin: 0 auto") 
+                    .col-md-5
+                        .card-body(style="text-align: left")
+                            h5.card-title Iphone 6
+                            p.card-text iOS 9 OS
+                            p.card-text 4.7" HD display
+                            p.card-text Camera 8MP|1.2MP
+                            p.card-text Fingerprint Sensor
+                            br
+                            p.card-text Rs: 35,000.00
+                            
+                            a(href="/user/cart")
+                                button.btn.btn-primary Add to Cart
+                            br
+                            
+                            a(href="/user/methodPayment")
+                                button.btn.btn-primary.mt-2 Buy Now
+

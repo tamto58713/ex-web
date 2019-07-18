@@ -1,18 +1,13 @@
 extends ../common/header
 block header
-        a(href="/admin")
+        a(href="/user")
                 button.ml-5(class="btn btn-primary") Home
 
         .bg-light.w-50.m-auto.h-50(style="text-align: center")
-                h3(style="padding-top: 10px") Admin Login
+                h3(style="padding-top: 10px") Payment Detail
                 .form(style="width: 100%; padding-top: 40px")
                         .form-group.form-inline.row
                                 label.col-md-3 
                                         strong UserName
                                 input.form-control.col-md-8(name="name" type="text")
-                        .form-group.form-inline.row
-                                label.col-md-3 
-                                        strong Password        
-                                input.form-control.col-md-8(name="input" type="password")
-                        a(href="/admin")        
-                                button.btn.btn-success Login 
+                        

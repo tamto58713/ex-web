@@ -1,6 +1,6 @@
 extends ../common/header
 block header
-        a(href="/admin")
+        a(href="/user")
                 button.ml-5(class="btn btn-primary") Home
 
         .bg-light.w-50.m-auto.h-50(style="text-align: center")
@@ -14,4 +14,5 @@ block header
                                 label.col-md-3 
                                         strong Password        
                                 input.form-control.col-md-8(name="input" type="password")
-                        button.btn.btn-success Login 
+                        a(href="/user")
+                                button.btn.btn-success Login 

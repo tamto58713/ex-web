@@ -1,0 +1,39 @@
+extends ../common/header
+block header
+        a(href="/user")
+                button.ml-5(class="btn btn-primary") Home
+
+        .bg-light.w-50.m-auto.h-50(style="text-align: center")
+                h3(style="padding-top: 10px") Shipping D    etail
+                .form(style="width: 100%; padding-top: 40px")
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Name
+                                input.form-control.col-md-8(name="name" type="text")
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Adddress
+                                input.form-control.col-md-8(name="address" type="text")
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong City/suburb
+                                input.form-control.col-md-8(name="city" type="text")
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong State/Province
+                                input.form-control.col-md-8(name="hometown" type="text")
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Postal Code
+                                input.form-control.col-md-8(name="code" type="text")
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Country
+                                input.form-control.col-md-8(name="country" type="text")
+                        
+
+                        button.btn.btn-success Proceed to Payment

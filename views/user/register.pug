@@ -1,0 +1,58 @@
+extends ../common/header
+block header
+        a(href="/user")
+                button.ml-5(class="btn btn-primary") Home
+
+        .bg-light.w-50.m-auto.h-50(style="text-align: center")
+                h3(style="padding-top: 10px") User Registeration
+                .form(style="width: 100%; padding-top: 40px")
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong First Name
+                                input.form-control.col-md-8(name="firstName" type="text")
+
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Last Name
+                                input.form-control.col-md-8(name="lastName" type="text")
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Gender
+                                input.form-control.col-md-4(name="gender" type="checkbox")
+                                input.form-control.col-md-4(name="gender" type="checkbox")
+                        
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Address
+                                input.form-control.col-md-8(name="address" type="text")
+                        
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Pin code
+                                input.form-control.col-md-8(name="pinCode" type="text")
+                        
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Email
+                                input.form-control.col-md-8(name="email" type="text")
+                        
+
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Password        
+                                input.form-control.col-md-8(name="password" type="password")
+                        
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Confirm Password        
+                                input.form-control.col-md-8(name="conf-password" type="password")
+
+                        .form-group.form-inline.row
+                                label.col-md-3 
+                                        strong Phone        
+                                input.form-control.col-md-8(name="phone" type="text")
+                        button.btn.btn-success register
